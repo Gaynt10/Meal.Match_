@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Restaurants | Meal Match</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container" style="position: relative;">
+      <h1>Meal Match</h1>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./res">Restaurants</a>
+        <a href="./about.html">About us</a>
+        <a href="#contact">Contact</a>
+        <a href="#login.html" class="login-link">Login/Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" style="padding: 80px 20px; height: 300px; background: url('food.jpg') no-repeat center center/cover;">
+    <h2>Find Your Favorite Meal</h2>
+    <p>Search restaurants by area, cuisine, or price!</p>
+  </section>
+
+  <!-- SEARCH AND FILTERS -->
+  <section style="padding: 40px 20px; background-color: #fff; text-align: center;">
+    <div class="container">
+      <input type="text" placeholder="Search restaurants..." style="padding: 10px; width: 60%; max-width: 400px; border-radius: 8px; border: 1px solid #ccc; margin-bottom: 20px;">
+      
+      <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; margin-top: 10px;">
+        <select style="padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
+          <option>All Areas</option>
+          <option>Tokyo</option>
+          <option>Osaka</option>
+          <option>Kyoto</option>
+        </select>
+        <select style="padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
+          <option>All Cuisines</option>
+          <option>Japanese</option>
+          <option>Chinese</option>
+          <option>Italian</option>
+        </select>
+        <select style="padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
+          <option>All Prices</option>
+          <option>$</option>
+          <option>$$</option>
+          <option>$$$</option>
+        </select>
+        <select id="halal-filter" style="padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
+        <option value="">Halal/Haram</option>
+        <option value="halal">Halal</option>
+        <option value="haram">Haram</option>
+      </select>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESTAURANT LIST -->
+  <section id="restaurants" style="padding: 60px 20px; background-color: #f4f4f4; text-align: center;">
+    <div class="container">
+      <h2 style="color: #ff6f61; margin-bottom: 40px;">Restaurants Near You</h2>
+      <div class="service-boxes" style="justify-content: center; gap: 20px; flex-wrap: wrap;">
+        <div class="box" style="max-width: 300px;">
+          <div style="background-color: #ffefee; height: 150px; border-radius: 15px; margin-bottom: 15px;">
+            <!-- Restaurant image placeholder -->
+          </div>
+          <h3>Restaurant Name</h3>
+          <p>Area: Tokyo | Cuisine: Japanese | 20% discount!</p>
+        </div>
+        <div class="box" style="max-width: 300px;">
+          <div style="background-color: #ffefee; height: 150px; border-radius: 15px; margin-bottom: 15px;">
+            <!-- Restaurant image placeholder -->
+          </div>
+          <h3>Restaurant Name</h3>
+          <p>Area: Osaka | Cuisine: Chinese | 15% discount!</p>
+        </div>
+        <div class="box" style="max-width: 300px;">
+          <div style="background-color: #ffefee; height: 150px; border-radius: 15px; margin-bottom: 15px;">
+            <!-- Restaurant image placeholder -->
+          </div>
+          <h3>Restaurant Name</h3>
+          <p>Area: Kyoto | Cuisine: Italian | 12% discount!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Meal Match. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
